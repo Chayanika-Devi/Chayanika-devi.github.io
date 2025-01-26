@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/Flexible Targeting.png.
 title: "Neuro"
 date: 2024-09-05
 labels:
