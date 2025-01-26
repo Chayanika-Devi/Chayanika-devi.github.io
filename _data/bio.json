@@ -14,11 +14,11 @@
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Neuronavigation System" },
+    { "name": "Healthcare" },
+    { "name": "Computer Vision" },
+    { "name": "Artificial Intelligence in Healthcare" },
+    { "name": "VR/AR" }
   ],
   "skills": [
     {
