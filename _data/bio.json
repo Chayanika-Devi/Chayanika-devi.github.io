@@ -38,7 +38,6 @@
       "startDate": "2024-09-05",
       "endDate": "Present",
       "courses": ["Computer Vision", "Software Engineering"]
-      ]
     }
   ],
   "work": [
@@ -64,11 +63,9 @@
       "highlights": [
         "Research and maintain a variety of spatial and associated attribute data for the city,municipal boundaries, parcel, addressing, zoning, land use, subdivision, vacant land, and other data layers",
         "Collaborate successfully on manuscript writing and participated in lab meetings and presentations"
-      ]
     }
   ],
- 
-  "awards": [
+"awards": [
     {
       "title": "Graduate Scholarships",
       "date": "2023-2024",
