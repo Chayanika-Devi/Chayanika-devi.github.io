@@ -23,27 +23,27 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++", "Java", "Python", "Matlab" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "Windows", "Ubuntu", "Git/GitHub" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
-      "courses": [
+      "institution": "University of Cincinnati, OH",
+      "area": "Geographic Information Science",
+      "studyType": "M.S.",
+      "startDate": "2022-08-08",
+      "endDate": "2024-07-22",
+      "courses": ["Medical Informatics", "Advanced Biostatistics", "Intro to Public Health"]
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
+      "company": "John A. Burns School of Medicine",
       "position": "Web Developer",
       "website": "",
       "startDate": "2015-08-01",
