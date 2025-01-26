@@ -39,15 +39,6 @@
       "endDate": "Present",
       "courses": ["Computer Vision", "Software Engineering"]
       ]
-    },
-    {
-      "institution": "University of Cincinnati, OH",
-      "area": "Geographic Information Science",
-      "studyType": "M.S",
-      "startDate": "2022-08-08",
-      "endDate": "2024-07-22",
-      "courses": ["Medical Informatics", "Advanced Biostatistics", "Intro to Public Health"]
-      ]
     }
   ],
   "work": [
