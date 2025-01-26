@@ -32,80 +32,63 @@
   ],
   "education": [
     {
+      "institution": "University of Hawaii, HI",
+      "area": "Computer Science",
+      "studyType": "M.S",
+      "startDate": "2024-09-05",
+      "endDate": "Present",
+      "courses": ["Computer Vision", "Software Engineering"]
+      ]
+    },
+    {
       "institution": "University of Cincinnati, OH",
       "area": "Geographic Information Science",
-      "studyType": "M.S.",
+      "studyType": "M.S",
       "startDate": "2022-08-08",
       "endDate": "2024-07-22",
       "courses": ["Medical Informatics", "Advanced Biostatistics", "Intro to Public Health"]
-      
+      ]
     }
   ],
   "work": [
     {
-      "company": "John A. Burns School of Medicine",
-      "position": "Web Developer",
+      "company": "John A. Burns School of Medicine"HI",
+      "position": "Graduate Assistant",
       "website": "",
-      "startDate": "2015-08-01",
+      "startDate": "2024-09-05",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Neuronavigational System",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Brain tumor landmark detetcion and segmentation",
+        "Improve landmark registration for neurosurgeon"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
+      "company": "Digiatl Epidemiology Laboratory,OH",
+      "position": "Resaerch Assistant",
+      "website": "https://ucdigitalfutures.com/digital-epidemiology-lab/",
+      "startDate": "2022-08-08",
+      "endDate": "2024-07-22",
+      "summary": "Telehealth services in the U.S",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Research and maintain a variety of spatial and associated attribute data for the city,municipal boundaries, parcel, addressing, zoning, land use, subdivision, vacant land, and other data layers",
+        "Collaborate successfully on manuscript writing and participated in lab meetings and presentations"
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
-      ]
-    }
-  ],
+ 
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "Graduate Scholarships",
+      "date": "2023-2024",
+      "awarder": "Women in GIS",
+      "summary": "Awarded a WiGIS scholarship from Women in GIS, USA, sponsored by ESRI, for the academic year 2023-2024."
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Kindness Champion Award Winners",
+      "date": "2022",
+      "awarder": "University of Cincinnati,OH",
+      "summary": "Kindness is a gift everyone can give every day not only to others, but also to ourselves."
     }
   ],
   "references": [
