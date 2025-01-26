@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/Flexible Targeting.png.
+image: img/Neuro_logo.png
 title: "Neuro"
 date: 2024-09-05
 labels:
