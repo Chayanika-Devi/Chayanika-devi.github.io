@@ -26,7 +26,7 @@ In the following example, we examine the components of a decent question. In thi
 ```
 Q: Date of six months from the current date using the datetime python module
 
-I am trying to get the date of six months from the current date using the datetime python module. Here is what i've tried:
+I am trying to get the date of six months from the current date using the datetime python module. Here is what I have tried:
 
 date(2015, 3, 31) + relativedelta(months = 6) gives datetime.date(2015, 9, 30). Perl: DateTime->new(year=>2000, month=>3, day=>31)->add(months=>6) gives 2000-10-01T00:00:00. Php: date_create('2000-03-31', new DateTimeZone('UTC'))->add(new DateInterval('P6M')) gives 2000-10-01.
 
