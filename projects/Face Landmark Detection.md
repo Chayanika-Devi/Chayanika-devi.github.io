@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/micromouse/Face landmark detction.png
 title: "Face Landmark Detection"
 date: 01/30/2025
 published: true
