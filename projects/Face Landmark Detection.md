@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/micromouse/Face landmark detction.png
 title: "Face Landmark Detection"
-date: 01/30/2025
+date: 2025-01-30
 published: true
 labels:
   - Python
