@@ -21,79 +21,81 @@ The idea that there are no stupid questions is commonly expressed by teachers an
 
 Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date six months from the current date using the datetime Python module?
 
 ```
-Q: python date of the previous month
+Q: Date of six months from the current date using the datetime python module
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+I am trying to get the date of six months from the current date using the datetime python module. Here is what i've tried:
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
+date(2015, 3, 31) + relativedelta(months = 6) gives datetime.date(2015, 9, 30). Perl: DateTime->new(year=>2000, month=>3, day=>31)->add(months=>6) gives 2000-10-01T00:00:00. Php: date_create('2000-03-31', new DateTimeZone('UTC'))->add(new DateInterval('P6M')) gives 2000-10-01.
 
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
+However, the above comments strike me as silly. The concept of "adding six months" is quite clear -- take the month component and add 6 to it, with support for rolling over the year (and cycling the month back to 1) if we go past December. This happens to be exactly what relativedelta.
 
-I have solved this trouble in bash with:
+I have solved this trouble with:
 
 echo $(date -d"3 month ago" "+%G%m%d")
 
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
+from datetime import date, timedelta
 
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
+# it's a lot faster with a constant day
+DAY = timedelta(1)
+
+def add_month(a_date, months):
+    "Add months to date and retain last day in month."
+    next_day = a_date + DAY
+    # calculate new year and month
+    m_sum = next_day.month + months - 1
+    y = next_day.year + m_sum // 12
+    m = m_sum % 12 + 1
+    try:
+        return date(y, m, next_day.day) - DAY
+    except ValueError:
+        # on fail return last day in month
+        # can't fail on december so I don't bother changing the year
+        return date(y, m + 1, 1) - DAY
 I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
 
 Thanks for your help!
 ```
 
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+The title of the question could be clearer, but it effectively communicates the user's intent. Typically, users might search for terms like "date six months from today using Python datetime module" on search engines, enhancing its discoverability. Another positive aspect of the question is that it is not merely an inquiry; the asker also demonstrates the effort they have put into solving the problem themselves. Additionally, the courtesy shown by the asker in their query may not be as crucial as the content, but it certainly helps in increasing the likelihood of receiving a response.
 
 ```
-A: datetime and the datetime.timedelta classes are your friend.
+A: Actually can manage to do this using datetime and MonthDelta
 
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
+1. Write an algorithm using datetime.timedelta
+2. Use a 3rd party library which implements an algorithm
 
-Like this:
+Regarding third-party libraries :
 
  >>> import datetime
+ >>> month_dt = 4
  >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
+ >>> y,m = today.year, today.month
+ >>> m += month_dt-1
+ >>> year_dt = m//12
+ >>> new_month = m%12
+ >>> new_date = datetime.date(y+year_dt, new_month+1, 1)
+ 
 ```
  
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
+The asker received 50 possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
 
 ## The foolproof way to get ignored.
 
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
+While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how can I ask better questions on Stack Overflow beyond reading the "How do I ask a good question?"
 
 ```
-Q: Facebook Desktop Notifier
+Q: How do I ask a good question?
 
-I am a beginner programmer that have never used anything other than what's included in a language.
+If it is a good question, people usually only give one or two upvotes. I have read the How do I ask a good question page but I think I fulfil all requirements stated there. Here is one of my good questions which has only 94 views in 2 months and only one upvote (at the time of asking). According to the Help Center, I should add correct tags and an informative title, but I think people don't see questions when they have too many tags or are too specific. Usually, they just come and downvote (sometimes even without reading the full question), but don't explain why my questions deserve them.
 
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
 
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
 ```
 
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
+A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to via external search engine (Google, etc). The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
 
 ## Conclusion
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+When we depend on the generosity and expertise of others to answer our questions, it is important that our inquiries are well-crafted. A smartly posed question not only aids us but also benefits the responders and anyone else who may have similar queries in the future. Therefore, if you are going to ask a question, make sure it is a thoughtful one. While asking questions does not always guarantee the best answers, framing them in a way that engages others can significantly boost the chances of receiving a helpful response and enhance the experience for everyone involved.
