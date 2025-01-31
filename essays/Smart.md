@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Smart Questions, Good Answers"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2025-01-30
 published: true
 labels:
   - Questions
@@ -15,7 +15,7 @@ labels:
 
 ## Is there such thing as a stupid question?
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+The idea that there are no stupid questions is commonly expressed by teachers and philosophers as a way to encourage continuous learning. However, the reality can sometimes be ironic. Consider, for example, someone asking, "Do you have a bathroom?" while they are in a residential home. This type of question suggests that, in fact, there can be such a thing as a silly or obvious question. Nonetheless, the broader intent of the saying is to foster an environment where people feel safe to ask and learn, regardless of how basic the question might seem.The perceived depth or triviality of a question often depends on the context in which it's asked. For example, the question "Why are we here?" could spark an extensive philosophical debate in a philosophy class. However, in a math class, the same question might be met with a pragmatic reply like, "Because you need the credits to graduate." This demonstrates how the setting can significantly influence the interpretation and response to a question.
 
 ## What’s a smart question?
 
