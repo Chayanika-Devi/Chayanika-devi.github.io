@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/micromouse/Flexible Targeting.png
-title: "Neuro"
+title: "Frameless Optical Neuronavigation Using Facial Feature Detection to Accurately Place External Ventricular Drains 1 "
 date: 2024-09-05
 labels:
   - Machine Learning
