@@ -5,9 +5,9 @@ image: img/micromouse/Flexible Targeting.png
 title: "Neuro"
 date: 2024-09-05
 labels:
-  - Robotics
-  - Arduino
-  - C++
+  - Machine Learning
+  - AI
+  - 3D Slicer
 summary: "We create a trackable probe so that EVD can be placed enabling dynamic real-time delivery."
 ---
 
@@ -17,22 +17,6 @@ summary: "We create a trackable probe so that EVD can be placed enabling dynamic
   <img width="200px" src="../img/micromouse/micromouse-circuit.png" class="img-thumbnail" >
 </div>
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
-
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
-
-Here is some code that illustrates how we read values from the line sensors:
-
-```cpp
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
-```
-
-You can learn more at the [UH Micromouse News Announcement](https://manoa.hawaii.edu/news/article.php?aId=2857).
+The process of establishing a bedside neuronavigation method comprises primary three steps including: 1) establishing one-to-one correspondence between the external face and head of the patient; 2) Probe tracking between the skull and lateral ventricle of the brain; 3) projection into a AR environment for clinician operation. This three-step process is achieved by using CT scans to establish volumetric models of the craniofacial surface, brain and lateral ventricles. The CT brain volume is segmented providing a mesh model of the brain surface as well as the lateral ventricle serving as the target. The probe is fitted with an optical marker that can be tracked with a depth sensing camera as it is inserted and followed on its course to the lateral ventricle. Using a head-mounted display, the depth of the probe can be tracked and visualized. Thus, a neuronavigation process is undertaken to ensure an individualized and accurate approach. The following specific aims will be undertaken to achieve this goal.
+I and my team have been working on to develop an application to establish a one-to-one correspondence between a patient’s surface of the craniofacial region, brain and lateral ventricle. I am respossible for working on CT images for landmark detection, Brain tumor position and segmentation using 3D Slicer software.
+We have practiced EVD placement in cadavers and do so successfully. If EVDs placement in a cadaver becomes problematic, a standardized phantom head (3D model printed) with small ventricles will be used.  These devices are very expensive so cadavers will be used first.  It is important to stress that this work is intended to establish the methodology of neuronavigation using VR with an exploratory statistical analysis. Once the proof of concept is achieved, a more comprehensive statistical investigation will be undertaken using a power test to determine a necessary sample size.
