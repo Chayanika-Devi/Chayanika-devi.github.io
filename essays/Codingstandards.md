@@ -6,7 +6,11 @@ title: "Programming is technical writing"
 date: 2025-02-13
 published: True
 labels:
- 
+labels:
+  - Questions
+  - Answers
+  - StackOverflow
+---
 
 <img width="800px" class="rounded float-start pe-4" src="../img/smart-questions/codestyle.png">
 
