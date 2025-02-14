@@ -6,16 +6,11 @@ title: "Programming is technical writing"
 date: 2025-02-13
 published: True
 labels:
-  - Questions
-  - Answers
-  - Thoughts
----
+ 
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/codestyle.png">
+<img width="500px" class="rounded float-start pe-4" src="../img/smart-questions/codestyle.png">
 
-## Is there such thing as a stupid question?
-
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+Throughout my undergraduate studies in India, I faced significant difficulties in understanding coding. I clearly remember the initial programming class I took; it seemed a foreign language that I was forced to learn overnight. While the professor was describing conditionals and loops, all I could see on the screen were perplexing symbols and arbitrary terms like while, if, and otherwise. Reading nonfiction is fun for me. Not just computing, but also biology, physics, philosophy, robotics, mechanical engineering, and other technical subjects.
 
 ## What’s a smart question?
 
