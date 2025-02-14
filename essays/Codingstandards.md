@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Reflect on Coding Standards"
+title: "Programming is technical writing"
 # All dates must be YYYY-MM-DD format!
 date: 2025-02-13
 published: True
