@@ -11,7 +11,7 @@ labels:
   - Thoughts
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/codestyle.png">
 
 ## Is there such thing as a stupid question?
 
