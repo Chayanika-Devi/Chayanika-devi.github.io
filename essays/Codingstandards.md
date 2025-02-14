@@ -21,9 +21,9 @@ A human conversation on the other hand, or a novel, or a political speech, pulls
 
 It feels gooey, and human. Just like writing.
 
-```
+
 After the first week of using ESLint with VS Code, I think I  feel that it is both helpful as well as painful. Although it efficiently detects possible code problems and keeps consistency, fixing all errors can initially feel overwhelming, particularly if I am  unfamiliar with the selected coding standards. This means that there will be a learning curve to adjust and fine-tune the configuration to my needs.In short, the only thing that matters is Consistency. And as huge standards documents are too much to read and memorise, so I prefer to go step by step instructions so that is easier for me to code.
-```
+
 ## Conclusion
 
 I think regular practice will solidify your comprehension of programming principles and progressively enhance your skills. With time, you will enhance your proficiency and confidence in your coding abilities.
