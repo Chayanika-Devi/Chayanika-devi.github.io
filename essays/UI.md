@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "UI"
+title: "UI  Framework"
 # All dates must be YYYY-MM-DD format!
 date: 2025-02-27
 published: true
@@ -13,15 +13,13 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/b.jpg">
 
-## Is there such thing as a stupid question?
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
 
-## What’s a smart question?
+When I first started using bootstrap, I thought it was the best way to build a website. If you need a menu bar, a pop-up window, or buttons, "boom!" And the most amazing thing is that it looks stunning. It looks like everything is easy, and you are very smart.Bootstrap is an awesome library that help you quickly build up beautiful UI interface and many people all over the world use it. But don’t let this magic restrict your power, with great CSS skill, you can create something more outstanding.
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+## why bother to use something like Bootstrap 5?
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+For me, it is time f to build up UI interface, I browsed many kinds of websites and felt astonished every time I saw amazing stuff, and here came a big question, I do not know how to build them. So I tried and I started to realize CSS is not as easy as I think. I think after you have good understanding about position, display, @ media, @ keyframes, etc. You can draw most of pictures on your browser now, and this time you feel CSS is no longer pain in the neck.
 
 ```
 Q: python date of the previous month
