@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/vacay/TeaShop_SHOPNo1.jpg
 title: "Tea Store in Honolulu"
-date: 2015
+date: 2025
 published: true
 labels:
   - html
@@ -13,14 +13,16 @@ summary: "A responsive web application for Tea Store that my team developed in I
 
 <img class="img-fluid" src="../img/vacay/TeaShop_SHOPNo1.jpg">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+Tea shop in Honolulu is a web application that I helped create as a team project in ICS course, Spring 2025. The project helped me learn how to design and implement a responsive web site.
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
+The website will serve as a platform to showcase different varieties of tea, highlighting their unique flavors and health benefits.
 
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
+It will feature an intuitive and user-friendly interface that allows visitors to explore product details effortlessly. The focus will be on creating a well-structured static website with a clean layout, engaging visuals, and smooth navigation.
 
-Here is some example code to illustrate Simple Schema use:
+To ensure accessibility across all devices, I will implement responsive design principles, making the website adaptable for desktops, tablets, and mobile screens.
 
-{% gist 9defa1fb3f4eb593ba5fa9eacedca960 %}
+By combining structured HTML content with elegant CSS styling, the goal is to deliver a seamless browsing experience that enhances user engagement and interest in the tea offerings.
+
+
  
 Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
