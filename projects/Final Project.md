@@ -13,7 +13,7 @@ summary: "A responsive web application for Tea Store that my team developed in I
 
 <img class="img-fluid" src="../img/vacay/TeaShop_SHOPNo1.jpg">
 
-Tea shop in Honolulu is a web application that I helped create as a team project in ICS course, Spring 2025. The project helped me learn how to design and implement a responsive web site.
+Tea shop in Honolulu is a web application that I helped create as a team project in ICS course, Spring 2025. The project will help me learn how to design and implement a responsive web site.
 
 The website will serve as a platform to showcase different varieties of tea, highlighting their unique flavors and health benefits.
 
@@ -23,6 +23,4 @@ To ensure accessibility across all devices, I will implement responsive design p
 
 By combining structured HTML content with elegant CSS styling, the goal is to deliver a seamless browsing experience that enhances user engagement and interest in the tea offerings.
 
-
- 
-Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
+Through this project, I aim to refine my skills in web design and front-end development by focusing on structuring content effectively with HTML and enhancing visual appeal with CSS. By creating a static yet engaging tea store, I hope to deliver a seamless and aesthetically pleasing browsing experience that captures the essence of a real online tea shop.
