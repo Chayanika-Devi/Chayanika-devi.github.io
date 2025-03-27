@@ -2,13 +2,13 @@
 layout: project
 type: project
 image: img/vacay/vacay-square.png
-title: "Vacay"
+title: "Tea Store in Honolulu"
 date: 2015
 published: true
 labels:
   - html
   - css
-summary: "A responsive web application for travel planning that my team developed in ICS 415."
+summary: "A responsive web application for Tea Store that my team developed in ICS Course."
 ---
 
 <img class="img-fluid" src="../img/vacay/vacay-home-page.png">
