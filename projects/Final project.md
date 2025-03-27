@@ -9,15 +9,6 @@ labels:
   - HTML
   - CSS
   
-The goal of this project is to design and develop a simple online tea store using HTML and CSS. The website will showcase different varieties of tea, their benefits, and an option for users to explore product details. This project will focus on html webpage design, responsiveness, and user-friendly navigation.
+For this project, I aim to design and develop a simple yet visually appealing online tea store using HTML and CSS. The website will serve as a platform to showcase different varieties of tea, highlighting their unique flavors and health benefits. It will feature an intuitive and user-friendly interface that allows visitors to explore product details effortlessly. The focus will be on creating a well-structured static website with a clean layout, engaging visuals, and smooth navigation. To ensure accessibility across all devices, I will implement responsive design principles, making the website adaptable for desktops, tablets, and mobile screens. By combining structured HTML content with elegant CSS styling, the goal is to deliver a seamless browsing experience that enhances user engagement and interest in the tea offerings.
 
-3. Objectives:
-Create a visually appealing and well-structured static website.
 
-Implement HTML for structuring content and CSS for styling.
-
-Ensure the website is responsive for desktops, tablets, and mobile devices.
-
-Provide a seamless navigation experience for users.
-
-You can learn more at the [UH Micromouse News Announcement](https://manoa.hawaii.edu/news/article.php?aId=2857).
