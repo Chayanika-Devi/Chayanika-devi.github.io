@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/vacay/vacay-square.png
+image: img/vacay/TeaShop_SHOPNo1.jpg
 title: "Tea Store in Honolulu"
 date: 2015
 published: true
