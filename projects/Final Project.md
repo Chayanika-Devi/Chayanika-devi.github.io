@@ -6,10 +6,8 @@ title: "Vacay"
 date: 2015
 published: true
 labels:
-  - Javascript
-  - Meteor
-  - MongoDB
-  - GitHub
+  - html
+  - css
 summary: "A responsive web application for travel planning that my team developed in ICS 415."
 ---
 
