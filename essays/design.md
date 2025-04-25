@@ -6,9 +6,10 @@ title: "Design Pattern"
 date: 2025-04-24
 published: true
 labels:
-  - Code
-  - Design
-    
+  - Questions
+  - Answers
+  - StackOverflow
+---
 
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
