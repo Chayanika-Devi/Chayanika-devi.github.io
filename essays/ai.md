@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "Use of AI in ICS 314"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2025-05-06
 published: true
 labels:
   - Questions
