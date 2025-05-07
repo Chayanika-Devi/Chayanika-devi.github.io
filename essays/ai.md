@@ -11,7 +11,7 @@ labels:
   - 
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/AI.jpg">
 
 ## Introduction
 With the advances in Large Language Models (LLMs), Generative AI (GenAI), and Conversational Agents (CAs), a wider discussion has started among computer scientists and educators, some urging for the necessity of “a major upheaval” in the field (Welsh, 2022), arguing the idea of writing computer programs and consequently, educating people for this purpose, "is headed for extinction".Numerous applications of AI in education (AIED) have emerged. For example, Khan Academy offers Khanmigo, an AI tutor harnessing GPT-4 capabilities, delivering personalized learning support and intelligent feedback across various subjects, including mathematics, programming, and language learning.In the Software Engineering course, I made use of AI tools such as GitHub Copilot and ChatGPT to support code generation, debugging, and understanding software development concepts.GitHub Copilot assisted me in writing and completing code more efficiently by suggesting context-aware code snippets, while ChatGPT helped clarify programming concepts, debug errors, and generate explanations for complex problems.
