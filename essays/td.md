@@ -1,14 +1,14 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "Understanding Effort Estimation in Software Projects- My Experince"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2025-05-10
 published: true
 labels:
   - Questions
   - Answers
-  - StackOverflow
+    
 ---
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
