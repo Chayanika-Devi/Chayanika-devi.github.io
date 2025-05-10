@@ -11,7 +11,7 @@ labels:
 summary: "A responsive bird watch web application for that my team developed in ICS Course."
 ---
 
-<img class="img-fluid" src="../img/vacay/TeaShop_SHOPNo1.jpg">
+<img class="img-fluid" src="../img/vacay/m.jpg">
 
 The problem: The Manoa campus is home to a diverse collection of plant and animal species, including many native to Hawaii. As a result, there are many avid bird watchers and people interested in where to find bird species, what time of day can you see these birds, and what bird species are you actually looking at. How can you find the bird you are looking for on campus reliably?
 
