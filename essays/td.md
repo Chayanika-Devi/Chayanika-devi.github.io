@@ -11,7 +11,7 @@ labels:
     
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/p.jpg">
 
 ## What I think about effort estimation and tracking
 
