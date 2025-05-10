@@ -2,25 +2,23 @@
 layout: project
 type: project
 image: img/vacay/TeaShop_SHOPNo1.jpg
-title: "Tea Store in Honolulu"
+title: "Manoa Bird Watch"
 date: 2025
 published: true
 labels:
   - html
   - css
-summary: "A responsive web application for Tea Store that my team developed in ICS Course."
+summary: "A responsive bird watch web application for that my team developed in ICS Course."
 ---
 
 <img class="img-fluid" src="../img/vacay/TeaShop_SHOPNo1.jpg">
 
-Tea shop in Honolulu is a web application that I helped create as a team project in ICS course, Spring 2025. The project will help me learn how to design and implement a responsive web site.
+The problem: The Manoa campus is home to a diverse collection of plant and animal species, including many native to Hawaii. As a result, there are many avid bird watchers and people interested in where to find bird species, what time of day can you see these birds, and what bird species are you actually looking at. How can you find the bird you are looking for on campus reliably?
 
-The website will serve as a platform to showcase different varieties of tea, highlighting their unique flavors and health benefits.
+The solution: Design a website to collect a list of birds and various information about them such as spotted locations, species and name, and what time of day and what part of the year can you spot them. Users can login and post information about where the birds have been spotted to better aid other bird watchers in finding them.
 
-It will feature an intuitive and user-friendly interface that allows visitors to explore product details effortlessly. The focus will be on creating a well-structured static website with a clean layout, engaging visuals, and smooth navigation.
+The Birds of Manoa website experience starts with a home page. On the home page, users can see an introduction to the website, and if they scroll down, a couple of currently featured bird species that can be seen in Manoa. If a user is not yet signed in, the navbar gives users the options "All Birds" to go to that page or the "Login" dropdown, where users can select sign in or sign up, and go to the corresponding page.All Birds takes all users to Birds of Manoa, a page that displays all of the birds that may reasonably be seen in the Manoa area. It has a card for each bird with their picture, common name, olelo Hawai name if they have one, their scientific name, and a description of them. This image shows the top of the page, which extends farther down to detail the 25 birds that are most likely to be seen in the Manoa area.
+At the sign up and sign in pages, users can either create a new account and then be signed in to it, or sign in to an account they previously made. Having an account is important because it allows the user to add their own bird sightings on the report sighting page, and see their past sightings on the list sightings page. Once signed in, users will see the "Report Sighting" and "Your Sightings" options available to them in the navbar.
+We have received testing and feedback from other UH students and JABSOM employees. Feedback was initially focused on errors they encountered. The major issue that was encountered was the report sighting page not working, with nothing happening upon clicking "submit." The visuals and overall concept were well received.
 
-To ensure accessibility across all devices, I will implement responsive design principles, making the website adaptable for desktops, tablets, and mobile screens.
-
-By combining structured HTML content with elegant CSS styling, the goal is to deliver a seamless browsing experience that enhances user engagement and interest in the tea offerings.
-
-Through this project, I aim to refine my skills in web design and front-end development by focusing on structuring content effectively with HTML and enhancing visual appeal with CSS. By creating a static yet engaging tea store, I hope to deliver a seamless and aesthetically pleasing browsing experience that captures the essence of a real online tea shop.
+Some of this app is valued for helping children, students, or others in Manoa develop an interest in bird watching by making it engaging and easy to learn about different bird species. This might help people, especially beginners, learn how to identify birds.The "All Birds" tab is helpful because it lets users explore a wide variety of bird species and learn about their original locations. This makes it easy to review and compare different birds, understand where they come from, and discover new ones they might see in the wild.
