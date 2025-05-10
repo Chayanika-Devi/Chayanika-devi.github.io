@@ -11,7 +11,7 @@ labels:
   -
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/s.jpg">
 
 ## Beyond the browser: fundamental principles in software engineering
 During this course, I have recognized that software engineering is more than only coding; it involves producing high-quality, maintainable, and scalable code. Two essential principles that bolstered this approach were Design Patterns and Coding Standards. These techniques constitute the structural and stylistic core of software engineering, with their significance extending far beyond the development of online applications.
