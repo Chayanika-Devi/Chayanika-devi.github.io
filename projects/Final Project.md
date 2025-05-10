@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/vacay/TeaShop_SHOPNo1.jpg
 title: "Manoa Bird Watch"
-date: 2025
+date: 2025-5-10
 published: true
 labels:
   - html
