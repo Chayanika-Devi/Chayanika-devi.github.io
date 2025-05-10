@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/vacay/TeaShop_SHOPNo1.jpg
+image: img/vacay/m.jpg
 title: "Manoa Bird Watch"
 date: 2025-5-10
 published: true
