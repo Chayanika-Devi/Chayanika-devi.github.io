@@ -142,6 +142,14 @@
       .about2-photo { order: -1; }
     }
 
+
+    /* About shows only when "About" is clicked */
+    #about { display: none; }
+    body.about-view #about { display: block; padding-top: 56px; }
+    body.about-view .hero,
+    body.about-view section:not(#about) { display: none; }
+    .links a.active { color: var(--text); font-weight: 500; }
+
     /* Cards */
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
     .card {
@@ -238,7 +246,7 @@
   <!-- ===== Header ===== -->
   <header id="top">
     <div class="wrap nav">
-      <a class="brand" href="#top"><span class="badge">CD</span>Chayanika Devi</a>
+      <a class="brand" href="#home"><span class="badge">CD</span>Chayanika Devi</a>
       <nav class="links" id="links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -553,6 +561,22 @@
     // Header shadow on scroll
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+
+    // About page view: #about shows only About; anything else shows the main page
+    const aboutLink = document.querySelector('.links a[href="#about"]');
+    function route() {
+      const onAbout = location.hash === '#about';
+      document.body.classList.toggle('about-view', onAbout);
+      aboutLink.classList.toggle('active', onAbout);
+      if (onAbout || location.hash === '#home' || location.hash === '') {
+        window.scrollTo(0, 0);
+      } else {
+        const el = document.querySelector(location.hash);
+        if (el) el.scrollIntoView();
+      }
+    }
+    window.addEventListener('hashchange', route);
+    route();
   </script>
 </body>
 </html>
