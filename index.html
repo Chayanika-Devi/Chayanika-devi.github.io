@@ -806,7 +806,7 @@
       if (p.video || p.drive || p.drives) h += '<a class="btn btn-primary btn-lg" href="#pv-video" onclick="playPV();return false;"><i class="fa-solid fa-play"></i> Watch video</a>';
       if (p.folder) h += '<a class="btn ' + (p.drives ? 'btn-outline' : 'btn-primary') + ' btn-lg" href="' + p.folder + '" target="_blank"><i class="fa-brands fa-google-drive"></i> Open in Google Drive</a>';
       if (p.link) h += '<a class="btn ' + ((p.video || p.drive) ? 'btn-outline' : 'btn-primary') + ' btn-lg" href="' + p.link[1] + '" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> ' + esc(p.link[0]) + '</a>';
-      h += '<a class="btn btn-outline btn-lg" href="https://github.com/chayanika-devi" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div></div>';
+      h += '</div></div>';
       const driveId = p.drive && (p.drive.match(/\/d\/([\w-]+)/) || p.drive.match(/[?&]id=([\w-]+)/) || [])[1];
       const folderId = p.folder && (p.folder.match(/folders\/([\w-]+)/) || [])[1];
       const ids = (p.drives || []).map(u => (u.match(/\/d\/([\w-]+)/) || [])[1]).filter(Boolean);
