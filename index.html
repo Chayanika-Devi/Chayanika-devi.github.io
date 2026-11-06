@@ -196,6 +196,10 @@
     .pv-nav { max-width: 900px; margin: 64px auto 0; display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); padding-top: 24px; font-weight: 500; }
     @media (max-width: 900px) { .pv-body { grid-template-columns: 1fr; gap: 28px; } }
 
+    .group-title { font-size: 22px; font-weight: 500; margin: 0 0 6px; display: flex; align-items: center; gap: 12px; }
+    .group-title i { color: var(--blue); background: var(--blue-soft); width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; font-size: 16px; }
+    .group-sub { color: var(--text-2); margin: 0 0 24px 50px; }
+    .cards + .group-title { margin-top: 64px; }
     /* Cards */
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
     .card {
@@ -344,6 +348,41 @@
     <div class="wrap">
       <p class="sec-label">Projects</p>
       <h2 class="sec-title">Selected work</h2>
+      <h3 class="group-title"><i class="fa-solid fa-chart-line"></i> Health Data Projects</h3>
+      <p class="group-sub">Population and public health data analysis, dashboards, and geospatial mapping.</p>
+      <div class="cards">
+        <div class="card">
+          <span class="when">Sep 2026 – Present</span>
+          <h3>Rural Telehealth Access in Hawaiʻi</h3>
+          <p>Analyzing American Community Survey (ACS) data with geospatial methods to examine telehealth access in underserved rural communities across Hawaiʻi and identify barriers to digital health services.</p>
+          <div class="tags"><span class="tag">ACS</span><span class="tag">Python</span><span class="tag">GIS</span><span class="tag">Telehealth</span></div>
+          <a class="more" href="#project/hawaii">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <span class="when">2022 – 2024</span>
+          <h3>COVID-19 Forecasting with Machine Learning</h3>
+          <p>Built Python machine learning models on CDC surveillance data to forecast disease trends across 3+ years of records, supporting spatial epidemiology research on COVID-19 in Ohio.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">CDC data</span><span class="tag">ArcGIS</span></div>
+          <a class="more" href="#project/covid">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <span class="when">2023 – 2024</span>
+          <h3>Geospatial Mapping of Unmet Health Needs in South Africa</h3>
+          <p>Mapped the convergence of HIV and non-communicable disease epidemics using survey and spatial data to locate communities with the greatest unmet health needs. Published in BMJ Global Health.</p>
+          <div class="tags"><span class="tag">GIS</span><span class="tag">DHS</span><span class="tag">Spatial epidemiology</span><span class="tag">R / Python</span></div>
+          <a class="more" href="#project/southafrica">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <span class="when">2022 – 2024</span>
+          <h3>Assessing Access to Digital Services in Healthcare</h3>
+          <p>Built ArcGIS web maps with international university partners to visualize multi-source public health data on telehealth access and unmet health needs.</p>
+          <div class="tags"><span class="tag">ArcGIS</span><span class="tag">GIS</span><span class="tag">Telehealth</span></div>
+          <a class="more" href="#project/gis">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <h3 class="group-title"><i class="fa-solid fa-eye"></i> Computer Vision Projects</h3>
+      <p class="group-sub">Camera calibration, pose estimation, and medical imaging for neurosurgical navigation.</p>
       <div class="cards">
         <div class="card">
           <span class="when">Jan 2026 – May 2026</span>
@@ -379,13 +418,6 @@
           <p>Explored MONAI Label and NVIDIA AIAA within 3D Slicer to perform AI-assisted 3D segmentation on MRI datasets for neurosurgical planning.</p>
           <div class="tags"><span class="tag">MONAI</span><span class="tag">NVIDIA AIAA</span><span class="tag">MRI</span></div>
           <a class="more" href="#project/monai">Learn more <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="card">
-          <span class="when">2022 – 2024</span>
-          <h3>Assessing Access to Digital Services in Healthcare</h3>
-          <p>Built ArcGIS web maps with international university partners to visualize multi-source public health data on telehealth access and unmet health needs.</p>
-          <div class="tags"><span class="tag">ArcGIS</span><span class="tag">GIS</span><span class="tag">Telehealth</span></div>
-          <a class="more" href="#project/gis">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -684,6 +716,33 @@
         chips: ["MONAI Label", "NVIDIA AIAA", "3D Slicer", "MRI", "Deep learning"],
         did: ["Set up MONAI Label and NVIDIA AIAA within 3D Slicer.", "Ran AI-assisted 3D segmentation on pre-built MRI datasets."],
         learned: ["Gained hands-on experience with automated annotation workflows for neurosurgical planning."]
+      },
+      "hawaii": {
+        kicker: "Health Data · GIS", status: "In progress",
+        title: "Rural Telehealth Access in Hawaiʻi",
+        desc: "An ongoing study at the University of Hawaiʻi Social Science Research Institute using American Community Survey (ACS) data and geospatial analysis to understand who can and cannot access telehealth across Hawaiʻi's rural and geographically isolated communities.",
+        chips: ["Python", "ACS data", "GIS", "Geospatial analysis", "Telehealth"],
+        did: ["Analyzing ACS data on internet access, demographics, and health coverage at the community level.", "Applying geospatial methods to map telehealth availability across the islands.", "Building on prior research in telehealth and spatial epidemiology."],
+        learned: ["Identifying barriers to digital health services for geographically isolated populations.", "Highlighting gaps in healthcare access to inform more equitable care in Hawaiʻi."]
+      },
+      "covid": {
+        kicker: "Health Data · Machine Learning", status: "Published",
+        title: "COVID-19 Forecasting with Machine Learning",
+        desc: "Predictive machine learning models and GIS pipelines built at the University of Cincinnati Digital Epidemiology Laboratory to forecast disease trends from CDC surveillance data and better understand the spread of COVID-19 in Ohio.",
+        chips: ["Python", "Scikit-learn", "Pandas", "CDC surveillance data", "ArcGIS"],
+        link: ["Read the book chapter", "https://doi.org/10.3998/mpub.12396322"],
+        stats: [["3+ yrs", "of longitudinal records"], ["500K+", "records processed"], ["1", "book chapter"]],
+        did: ["Developed Python machine learning models to forecast disease trends from longitudinal CDC data.", "Built GIS pipelines for data conversion, spatial database management, and map production.", "Produced maps and reports on COVID-19 patterns across Ohio counties."],
+        learned: ["Co-authored the book chapter \"Using spatial epidemiology to better understand COVID-19 in Ohio\" (2022).", "Presented the work at the AAG national meeting in Colorado, 2023."]
+      },
+      "southafrica": {
+        kicker: "Health Data · Spatial Epidemiology", status: "Published",
+        title: "Geospatial Mapping of Unmet Health Needs in South Africa",
+        desc: "A spatial epidemiology study mapping where HIV and non-communicable disease epidemics overlap in South Africa, revealing communities with the greatest unmet health needs. Published in BMJ Global Health.",
+        chips: ["GIS", "DHS data", "Spatial epidemiology", "ArcGIS", "Python"],
+        link: ["Read the paper", "https://doi.org/10.1136/bmjgh-2023-012730"],
+        did: ["Processed population and health survey data for geospatial analysis.", "Built maps showing the convergence of HIV and non-communicable diseases.", "Collaborated with international university partners on the analysis."],
+        learned: ["Co-authored \"Convergence of HIV and non-communicable disease epidemics\" in BMJ Global Health (2024).", "Identified high-need areas to help target health services."]
       },
       "gis": {
         kicker: "Health Data · GIS", status: "Published",
