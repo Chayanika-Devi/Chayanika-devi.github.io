@@ -633,6 +633,8 @@
       "pixel": {
         kicker: "Computer Vision", status: "Completed",
         title: "Computer Vision Based Calibration Using a Pixel Phone Camera",
+        drive: "https://drive.google.com/file/d/1heTip64rR7VO1jdcgpuqvceAMA1aVrQf/view?usp=sharing",
+        caption: "ChArUco board calibration with an Android Pixel phone camera",
         desc: "Geometric camera calibration of an Android Pixel phone camera using a ChArUco board, computing intrinsic parameters for pose estimation with OpenCV.",
         chips: ["Python", "OpenCV", "ChArUco", "Camera calibration"],
         did: ["Captured ChArUco board images at 1920 × 1080 px.", "Applied OpenCV pipelines to compute intrinsic camera parameters.", "Tested multiple board orientations and lighting conditions."],
@@ -693,8 +695,8 @@
       h += '<h1 class="pv-title">' + esc(p.title) + '</h1><p class="pv-desc">' + esc(p.desc) + '</p>';
       h += '<div class="pv-chips">' + p.chips.map(c => '<span>' + esc(c) + '</span>').join('') + '</div>';
       h += '<div class="pv-btns">';
-      if (p.video) h += '<a class="btn btn-primary btn-lg" href="#pv-video" onclick="playPV();return false;"><i class="fa-solid fa-play"></i> Watch video</a>';
-      if (p.link) h += '<a class="btn ' + (p.video ? 'btn-outline' : 'btn-primary') + ' btn-lg" href="' + p.link[1] + '" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> ' + esc(p.link[0]) + '</a>';
+      if (p.video || p.drive) h += '<a class="btn btn-primary btn-lg" href="#pv-video" onclick="playPV();return false;"><i class="fa-solid fa-play"></i> Watch video</a>';
+      if (p.link) h += '<a class="btn ' + ((p.video || p.drive) ? 'btn-outline' : 'btn-primary') + ' btn-lg" href="' + p.link[1] + '" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> ' + esc(p.link[0]) + '</a>';
       h += '<a class="btn btn-outline btn-lg" href="https://github.com/chayanika-devi" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div></div>';
       const driveId = p.drive && (p.drive.match(/\/d\/([\w-]+)/) || p.drive.match(/[?&]id=([\w-]+)/) || [])[1];
       if (driveId) h += '<div class="frame" id="pv-video"><div class="frame-bar"><span></span><span></span><span></span></div><div class="drive-wrap"><iframe src="https://drive.google.com/file/d/' + driveId + '/preview" allow="autoplay; fullscreen" allowfullscreen></iframe></div><div class="frame-cap">' + esc(p.caption) + '</div></div>';
