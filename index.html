@@ -185,6 +185,10 @@
     .vid-grid .frame { margin: 0; }
     @media (max-width: 900px) { .vid-grid { grid-template-columns: 1fr; } }
     .frame-cap { color: var(--text-2); font-size: 14px; text-align: center; padding: 12px 16px; }
+    .pv-context { max-width: 900px; margin: 56px auto 0; background: var(--bg-alt); border: 1px solid var(--line); border-radius: 20px; padding: 32px 36px; }
+    .pv-context h3 { font-size: 20px; font-weight: 500; margin: 0 0 14px; }
+    .pv-context p { color: var(--text-2); font-size: 16px; margin: 0 0 14px; }
+    .pv-context p:last-child { margin-bottom: 0; }
     .pv-body { max-width: 900px; margin: 64px auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
     .pv-body h3 { font-size: 20px; font-weight: 500; margin: 0 0 14px; }
     .pv-body ul { color: var(--text-2); margin: 0; padding-left: 18px; font-size: 16px; }
@@ -354,7 +358,7 @@
         <div class="card">
           <span class="when">Sep 2026 – Present</span>
           <h3>Rural Telehealth Access in Hawaiʻi</h3>
-          <p>Analyzing American Community Survey (ACS) data with geospatial methods to examine telehealth access in underserved rural communities across Hawaiʻi and identify barriers to digital health services.</p>
+          <p>Graduate research with the Telehealth Analytics Coordinating Center (TACC), using ACS data and geospatial methods to examine telehealth access in Hawaiʻi's rural and neighbor-island communities.</p>
           <div class="tags"><span class="tag">ACS</span><span class="tag">Python</span><span class="tag">GIS</span><span class="tag">Telehealth</span></div>
           <a class="more" href="#project/hawaii">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
@@ -723,12 +727,20 @@
         learned: ["Gained hands-on experience with automated annotation workflows for neurosurgical planning."]
       },
       "hawaii": {
-        kicker: "Health Data · GIS", status: "In progress",
+        kicker: "Health Data · Telehealth Analytics", status: "In progress",
         title: "Rural Telehealth Access in Hawaiʻi",
-        desc: "An ongoing study at the University of Hawaiʻi Social Science Research Institute using American Community Survey (ACS) data and geospatial analysis to understand who can and cannot access telehealth across Hawaiʻi's rural and geographically isolated communities.",
-        chips: ["Python", "ACS data", "GIS", "Geospatial analysis", "Telehealth"],
-        did: ["Analyzing ACS data on internet access, demographics, and health coverage at the community level.", "Applying geospatial methods to map telehealth availability across the islands.", "Building on prior research in telehealth and spatial epidemiology."],
-        learned: ["Identifying barriers to digital health services for geographically isolated populations.", "Highlighting gaps in healthcare access to inform more equitable care in Hawaiʻi."]
+        desc: "Graduate research with the Telehealth Analytics Coordinating Center (TACC) at the University of Hawaiʻi Social Science Research Institute, using American Community Survey (ACS) data and geospatial analysis to understand telehealth access across Hawaiʻi's rural and neighbor-island communities.",
+        chips: ["Python", "ACS data", "GIS", "Data dashboards", "Telehealth"],
+        context: {
+          heading: "About TACC",
+          paras: [
+            "The Telehealth Analytics Coordinating Center (TACC) is a statewide hub hosted by the UH Mānoa Social Science Research Institute's Health Policy Initiative. It is part of the Pili Ola Telehealth Network under Hawaiʻi's Rural Health Transformation Program, and helps the state's telehealth partners measure performance, learn from one another, and improve together.",
+            "TACC maintains a shared analytics dashboard, hosts monthly technical assistance calls to align metrics and evaluation methods, runs quarterly Rapid Cycle Assessments, and publishes quarterly research and policy briefs along with an annual report.",
+            "Hawaiʻi's island geography makes healthcare harder to reach for many rural and neighbor-island residents. Telehealth can reduce travel time and cost, but programs often use different definitions, data systems, and reporting schedules. TACC's mission is to improve telehealth performance and equity across Hawaiʻi by coordinating data, measurement standards, and continuous learning across partners."
+          ]
+        },
+        did: ["Analyzing ACS data on internet access, demographics, and health coverage at the community level.", "Applying geospatial methods to map telehealth availability and gaps across the islands.", "Supporting TACC's shared data and measurement work for Hawaiʻi's telehealth partners."],
+        learned: ["Identifying barriers to digital health services for geographically isolated populations.", "Generating evidence to help close disparities in telehealth access, quality, and outcomes for rural and neighbor-island communities."]
       },
       "covid": {
         kicker: "Health Data · Machine Learning", status: "Published",
@@ -792,6 +804,7 @@
       if (folderId) h += '<div class="frame" id="pv-video"><div class="frame-bar"><span></span><span></span><span></span></div><div class="folder-wrap"><iframe src="https://drive.google.com/embeddedfolderview?id=' + folderId + '#grid"></iframe></div><div class="frame-cap">' + esc(p.caption) + '</div></div>';
       if (driveId) h += '<div class="frame" id="pv-video"><div class="frame-bar"><span></span><span></span><span></span></div><div class="drive-wrap"><iframe src="https://drive.google.com/file/d/' + driveId + '/preview" allow="autoplay; fullscreen" allowfullscreen></iframe></div><div class="frame-cap">' + esc(p.caption) + '</div></div>';
       else if (p.video) h += '<div class="frame" id="pv-video"><div class="frame-bar"><span></span><span></span><span></span></div><video id="pv-player" controls preload="metadata" playsinline poster="' + p.poster + '" onerror="videoMissing()"><source src="' + p.video + '" type="video/mp4" onerror="videoMissing()"></video><div class="vid-missing" id="vid-missing">Video file not found. Make sure <b>' + p.video + '</b> is next to index.html.</div><div class="frame-cap">' + esc(p.caption) + '</div></div>';
+      if (p.context) h += '<div class="pv-context"><h3>' + esc(p.context.heading) + '</h3>' + p.context.paras.map(x => '<p>' + esc(x) + '</p>').join('') + '</div>';
       if (p.stats) h += '<div class="pv-stats">' + p.stats.map(s => '<div class="stat"><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span></div>').join('') + '</div>';
       h += '<div class="pv-body"><div><h3>What I did</h3><ul>' + p.did.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul></div>';
       h += '<div><h3>Results</h3><ul>' + p.learned.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul></div></div>';
